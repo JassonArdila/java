@@ -5,14 +5,11 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        System.out.println("escribe tu nombre:");
-        Scanner consola = new Scanner(System.in);
-        var usuario = consola.nextLine();
-        System.out.println("usuario = " + usuario);
-        System.out.println("escribe el titulo");
-        var titulo = consola.nextLine();
-        System.out.println("resultado = " + titulo + " " + usuario);
-        
-
+     /*
+        tipos primitivos enteros: byte, short, int, long
+        */
+     byte NumeroByte=10;
+        System.out.println("Valor minimo byte" + Byte.MIN_VALUE);
+        System.out.println("Valor maximo byte" + Byte.MAX_VALUE);
     }
 }
