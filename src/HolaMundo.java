@@ -1,26 +1,24 @@
 
 import java.util.Scanner;
 
+
 //mi clase en java
 public class HolaMundo {
 
     public static void main(String args[]) {
-        //convertir un tipo string a un tipo int
-        var edad = Integer.parseInt("20");
-        System.out.println("edad =" + (edad + 1));
-      var valorPi= Double.parseDouble("3.1416");
-        System.out.println("valorPi = " + valorPi);
-        
-        //pedir un valor.
-//        var consola = new Scanner(System.in);
-//        System.out.println("ingresa tu edad");
-//        edad = Integer.parseInt(consola.nextLine());
-//        System.out.println("edad = " + edad);
-        
-        var edadTexto = String.valueOf(10);
-        System.out.println("edadTexto = " + edadTexto);
-        
-      var caracter = "hola".charAt(2);
-        System.out.println("caracter = " + caracter);
+        var resultado = (1 > 2) ? "verdadero" : "falso";
+        System.out.println("resultado = " + resultado);
+
+        var numero = 8;
+        resultado = (numero % 2 == 0) ? "numero par" : "numero impar";
+        System.out.println("resultado = " + resultado);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Proporciona el numero1:");
+        int numero1 = Integer.parseInt(scanner.nextLine());
+        System.out.println("Proporciona el numero2:");
+        int numero2 = Integer.parseInt(scanner.nextLine());
+        System.out.println("El numero mayor es:");
+        System.out.println(numero1 > numero2 ? numero1 : numero2);
     }
 }
