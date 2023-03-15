@@ -1,24 +1,31 @@
 
 import java.util.Scanner;
 
-
 //mi clase en java
 public class HolaMundo {
 
     public static void main(String args[]) {
-        var resultado = (1 > 2) ? "verdadero" : "falso";
-        System.out.println("resultado = " + resultado);
+        var consola = new Scanner(System.in);
+        System.out.println("ingresa numero del mes");
+        var mes = Integer.parseInt(consola.nextLine());
+        var estacion = "estacion desconocido";
+        
+        switch(mes){
+            
+            case 1: case 2: case 12:;
+            estacion = "invierno";
+            break;
+            case 3: case 4: case 5:;
+            estacion = "primavera";
+            break;
+            case 6: case 7: case 8:;
+            estacion = "verano";
+            break;
+            case 9: case 10: case 11:;
+            estacion = "otonio";
+            break;
+        }
+        System.out.println("estacion = " + estacion);
 
-        var numero = 8;
-        resultado = (numero % 2 == 0) ? "numero par" : "numero impar";
-        System.out.println("resultado = " + resultado);
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Proporciona el numero1:");
-        int numero1 = Integer.parseInt(scanner.nextLine());
-        System.out.println("Proporciona el numero2:");
-        int numero2 = Integer.parseInt(scanner.nextLine());
-        System.out.println("El numero mayor es:");
-        System.out.println(numero1 > numero2 ? numero1 : numero2);
     }
 }
