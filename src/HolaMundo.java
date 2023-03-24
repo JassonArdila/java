@@ -5,27 +5,19 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        var consola = new Scanner(System.in);
-        System.out.println("ingresa numero del mes");
-        var mes = Integer.parseInt(consola.nextLine());
-        var estacion = "estacion desconocido";
         
-        switch(mes){
-            
-            case 1: case 2: case 12:;
-            estacion = "invierno";
-            break;
-            case 3: case 4: case 5:;
-            estacion = "primavera";
-            break;
-            case 6: case 7: case 8:;
-            estacion = "verano";
-            break;
-            case 9: case 10: case 11:;
-            estacion = "otonio";
-            break;
+        for ( var contador = 0 ; contador < 3 ; contador++ ){
+            System.out.println("contador = " + contador);
         }
-        System.out.println("estacion = " + estacion);
-
+ //   var contador = 0;
+ //   while (contador < 3){
+ //       System.out.println("contador = " + contador);
+ //       contador++;
+ //   }
+//   var contador = 0;
+//   do{
+//       System.out.println("contador = " + contador);
+//       contador++;
+//   }while (contador < 0);
     }
 }
